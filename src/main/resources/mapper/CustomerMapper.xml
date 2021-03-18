@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssm.dao.CustomerMapper">
+    <resultMap id="customerResultMap" type="com.ssm.pojo.Customer">
+        <id property="pk_customer" column="pk_customer"/>
+        <result property="pk_org" column="pk_org"/>
+        <result property="code" column="code"/>
+        <result property="name" column="name"/>
+        <result property="def43" column="def43"/>
+        <result property="def2" column="def2"/>
+        <result property="def3" column="def3"/>
+        <result property="def4" column="def4"/>
+        <result property="def6" column="def6"/>
+        <result property="def7" column="def7"/>
+        <result property="def8" column="def8"/>
+        <result property="def23" column="def23"/>
+        <result property="def24" column="def24"/>
+        <result property="def25" column="def25"/>
+        <result property="def10" column="def10"/>
+        <result property="def20" column="def20"/>
+        <result property="pk_customer_main" column="pk_customer_main"/>
+        <result property="def41" column="def41"/>
+        <result property="def21" column="def21"/>
+        <result property="def22" column="def22"/>
+        <result property="def40" column="def40"/>
+        <result property="def28" column="def28"/>
+        <result property="pk_custclass" column="pk_custclass"/>
+        <result property="def1" column="def1"/>
+        <result property="pk_areacl" column="pk_areacl"/>
+        <result property="ts" column="ts"/>
+    </resultMap>
+    <select id="queryAllCustomer" resultMap="customerResultMap">
+        SELECT *
+        FROM bd_customer
+    </select>
+
+</mapper>
